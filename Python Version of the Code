@@ -1,0 +1,21 @@
+username = input("What is your username?")
+password = input("What is your password?")
+usernamecheck = "harry"
+passwordcheck = "pasaoa"
+
+if username == usernamecheck and password == passwordcheck:
+    j = input("What is your favorite japanese food?")
+    if j == "WAGYU":
+        print("It is a group of four japanese beef cattle breeds known for their highly marbled and tender meat, prized for its rich flavor and buttery texture.")
+    elif j == "SUSHI":
+        print("a Japanese dish consisting of small balls or rolls of vinegar-flavored cold cooked rice served with a garnish of raw fish, vegetables, or egg.")
+    elif j == "FUGU":
+        print("a pufferfish that is eaten as a Japanese delicacy, after some highly poisonous parts ableshave been removed.")
+    elif j == "RAMEN":
+        print("quick-cooking noodles, typically served in a broth with meat and vegetables.")
+    elif j == "TONKATSU":
+        print("a Japanese dish of pork coated in breadcrumbs and fried.")
+    else:
+        print("It is not a japanese food, you silly.")
+else:
+    print("Login Failed! incorrect username and password!")
