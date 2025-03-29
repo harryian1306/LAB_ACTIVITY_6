@@ -1,0 +1,38 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main() {
+
+    string usernamecheck = "harry";
+    string passwordcheck = "pasaoa";
+    string username, password, food;
+    
+    cout << "Enter your username:";
+    cin >> username;
+    
+    cout << "Enter your password:";
+    cin >> password;
+    
+    if (username == usernamecheck && password == passwordcheck) {
+        cout << "Hi, What Japanese food do you want to know and eat?" << endl;
+        cin >> food;
+        if (food == "WAGYU")
+            cout << "It is a group of four Japanese beef cattle breeds known for their highly marbled and tender meat, prized for its rich flavor and buttery texture." << endl;
+        if (food == "SUSHI")
+            cout << "a Japanese dish consisting of small balls or rolls of vinegar-flavored cold cooked rice served with a garnish of raw fish. vegetables, or egg." << endl;  
+        if (food == "RAMEN")
+            cout << "quick-cooking noodles, typically served in a broth with meat and vegetables." << endl;
+        if (food == "FUGU")
+            cout << "a puffer fish that is eaten as a japanese delicacy, after some highly poisonous parts have been removed.." << endl;
+        if (food == "TONKATSU")
+            cout << "a Japanese dish of pork coated in breadcrumbs and fried" << endl; 
+        else
+            cout << "It is not a japanese food, you silly." << endl;
+    } else {
+        cout << "Login Failed! Incorrect username and password!" << endl;
+        }    
+    
+    return 0;
+    }        
